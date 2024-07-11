@@ -79,6 +79,7 @@ header {
   color: white;
   margin-top: 54px;
  gap: 0 34px;
+ 
 }
 
 .button1 {
@@ -90,6 +91,7 @@ header {
   color: white;
   font-weight: 700;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .button2 {
@@ -102,7 +104,7 @@ header {
   color: white;
   font-weight: 700;
   font-size: 24px;
-
+  cursor: pointer;
 }
 
 
@@ -285,9 +287,10 @@ header {
   color: white;
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.button20 {
+.button20  {
   border-color: white;
   background-color: transparent;
   width: 173px;
@@ -297,6 +300,7 @@ header {
   color: white;
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 
 footer{
@@ -304,6 +308,13 @@ footer{
   justify-content: space-between;
   align-items: center;
   padding: 10px 25px 10px 25px;
+}
+
+.nav2 {
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
 .img2 {
@@ -322,5 +333,36 @@ padding: 0 20px 0 0;
 
 .nav2 a {
   text-decoration: none;
+  
+}
+
+.button1:hover {
+  background-color: #f67546;
+  border-color:#f67546 ;
+  transition-duration: 1s;
+  transition-property: all;
+  
+}
+.button2:hover{
+  background-color: rgba(255, 255, 255, 0.658);
+  border-color: rgba(255, 255, 255, 0.658);
+  transition-duration: 1s;
+  transition-property: all;
+  
+}   
+
+.button10:hover {
+  background-color: #f67546;
+  border-color:#f67546 ;
+  transition-duration: 1s;
+  transition-property: all;
+  
+}
+
+.button20:hover{
+  background-color: rgba(255, 255, 255, 0.658);
+  border-color: rgba(255, 255, 255, 0.658);
+  transition-duration: 1s;
+  transition-property: all;
   
 }
