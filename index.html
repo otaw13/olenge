@@ -1,126 +1,304 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <title>Bella Olonje delivery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/main.js"></script>
 
-<head>
-   <link href="styles/style.css" rel="stylesheet" type="text/css" />
-   <meta charset="UTf-8" />
-   <title> Bella Olonje delivery </title>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <header
+      class="pt-[10px] pr-[25px] pb-[10px] pl-[25px] flex justify-between items-center"
+    >
+      <img
+        src="images/4582665240404145ae72b9255f16e36d.png"
+        class="w-[246px] h-[101.76px]"
+        alt="img1"
+      />
+      <div>
+        <button class="sm:hidden " id="menuButton">
+          <svg
+            class="hover:text-[#FA4A0C] fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            height="50px"
+            viewBox="0 -960 960 960"
+            width="50px"
+            fill="#252B42"
+          >
+            <path
+              d="M160-269.23v-40h640v40H160ZM160-460v-40h640v40H160Zm0-190.77v-40h640v40H160Z"
+            />
+          </svg>
+          <!-- <img src="images/menu_navyblue_cropped_252B42_FILL0_wght200_GRAD0_opsz24.png" alt="menu">  -->
+        </button>
+      </div>
 
-<body>
-   <header>
-      <img src="images/4582665240404145ae72b9255f16e36d.png" class="img1" />
-      <nav class="nav">
-         <a href="#">
-            Home
-         </a>
-         <a href="#">
-            Product
-         </a>
-         <a href="#">
-            Product
-         </a>
-         <a href="#">
-            Product
-         </a>
+      <nav class="montserat max-sm:hidden sm:text-[#252B42]">
+        <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Home</a>
+        <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Product</a>
+        <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">FAQ</a>
+        <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Contact</a>
       </nav>
-   </header>
+    </header>
 
-   <section class="section1">
-
-      <img src="images/Rectangle 48.png" class="bgimg" />
-
-      <div class="title">
-         <h3>Food App</h3>
-         <h1> Why stay hungry when you can order from Bella Olonje </h1>
-         <h4>Download the Bella Olonje's food app now on </h4>
-         <div class="clicker">
-            <button  class="button1">
-               Playstore 
-            </button>
-            <button class="button2">
-               App strore 
-            </button>
-
-         </div>
-      </div>
-   </section>
-
-   
-   <img class="tel1" src="./images/Group 53.png" alt="phone">
-   
-   <section class="section2">
-      <h2 class="h2">How the app works</h2>
-      <div class="howApp">
-         <img src="images/Rectangle (1).png">
-         <div class="title2">
-            <h3>Create an account</h3>
-            <h2>Create/login to an existing account to get started</h2>
-            <h4> An account is created with your email and a desired password</h4>
-         </div>
-      </div>
-   </section>
-
-   <section class="section3">
-      <div class="exp">
-         <div class="title3">
-            <h3>Explore varieties</h3>
-            <h2>Shop for your favorites meal as e dey hot.</h2>
-            <h4> Shop for your favorite meals or drinks  and enjoy while doing it.</h4>
-         </div>
-         <img src="images/Rectangle (2).png">
-      </div>
-   </section>
-
-   <section class="section4">
-      <div class="checkout">
-         <img src="images/Rectangle (3).png">
-         <div class="title4">
-            <h3>Checkout</h3>
-            <h2>When you done check out and get it delivered.</h2>
-            <h4> When you done check out and get it delivered with ease.</h4>
-         </div>
-      </div>
-   </section>
-
-   <section class="section5">
-
-      <img src="images/Rectangle 47.png" class="bgimg2" />
-
-      <div class="title5">
-         <h2>Download the app now.</h2>
-         <h4> Available on your favorite store. Start your premium experience now </h4>
-         <div class="clicker2">
-            <button class="button10">
-               Playstore 
-            </button>
-            <button class="button20">
-               App strore 
-            </button>
-
-         </div>
-      </div>
-   </section>
-
-<footer>
-   <img src="images/4582665240404145ae72b9255f16e36d.png" class="img2" alt="logo">
-      <nav class="nav2"> 
-       <a href="#">
-         <img src="images/ant-design_twitter-outlined.png" class="tw" alt="tw">
-        </a> 
-       <a href="#">
-         <img src="images/Vector.png" class="fb" alt="fb">
-         </a> 
-       <a href="#">
-         <img src="images/instagram.png" class="inst"  alt="inst">
-         </a>
+    <div
+      id="sidebar"
+      class="montserat z-[10] lg:hidden sm:hidden fixed right-0    top-0 h-full w-1/3 bg-[#d8d8d8] transform translate-x-full lg:translate-x-0 lg:static lg:bg-transparent lg:pt-4 
+      lg:pb-4 transition-transform duration-300 ease-in-out
+      max-[480px]:w-full max-[480px]:text-center"
+    >
+      <button id="close" class="absolute top-4 right-4">
+        <svg
+          class="hover:text-[#FA4A0C] fill-current  py-[10px] px-[-10px] border-[#252B42]"
+          xmlns="http://www.w3.org/2000/svg"
+          height="50px"
+          viewBox="0 -960 960 960"
+          width="50px"
+          fill-[#252B42]
+        >
+          <path
+            d="M256-227.69 227.69-256l224-224-224-224L256-732.31l224 224 224-224L732.31-704l-224 224 224 224L704-227.69l-224-224-224 224Z"
+          />
+        </svg>
+      </button>
+      <nav class="mt-8 ml-4">
+        <a
+          href="#"
+          class="block py-2 px-4 text-[#252B42] hover:text-[#FA4A0C] font-semibold"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-[#252B42] hover:text-[#FA4A0C] font-semibold"
+          >Products</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-[#252B42] hover:text-[#FA4A0C] font-semibold"
+          >FAQ</a
+        >
+        <a
+          href="#"
+          class="block py-2 px-4 text-[#252B42] hover:text-[#FA4A0C] font-semibold"
+          >Contacts</a
+        >
       </nav>
-      <sub>Copywright 2020 Bella Onojie.com</sub>
-</footer>
+    </div>
 
+    <section class="relative h-[619px]">
+      <img
+        src="images/Rectangle 48.png"
+        class="object-cover top-0 right-0 left-0 bottom-0 absolute w-full h-[619px] z-[-10]"
+        alt="bgimg"
+      />
 
-</body>
+      <div
+        class="container mx-auto leading-tight flex items-center montserat !text-[#fff] justify-center text-center flex-col h-full"
+      >
+        <h3 class="text-[16px] sm:text-[20px] lg:text-[24px] font-bold py-3">
+          Food App
+        </h3>
+        <h1
+          class="text-[32px] sm:text-[40px] lg:text-[58px] leading-tight font-bold py-3"
+        >
+          Why stay hungry when you can order from Bella Olonje
+        </h1>
+        <h4 class="text-[16px] sm:text-[20px] lg:text-[24px] font-medium py-3">
+          Download the Bella Olonje's food app now on
+        </h4>
+        <div
+          class="mt-[57px] flex flex-col sm:flex-row gap-y-5 gap-x-[20px] items-center justify-center sm:items-center sm:justify-center lg:items-center lg:justify-center montserat font-bold"
+        >
+          <button
+            class="text-[24px] transition-all duration-300 border border-[#FA4A0C] bg-[#FA4A0C] rounded-[30px] py-[10px] px-8 sm:py-[10px] lg:py-[16px] text-white cursor-pointer hover:text-[white] hover:bg-[#f67546]"
+          >
+            Playstore
+          </button>
+          <button
+            class="text-[24px] transition-all duration-300 border border-white bg-transparent rounded-[30px] py-[10px] px-7 sm:py-[10px] lg:py-[16px] text-white cursor-pointer hover:text-[white] hover:bg-[#ffffff7f] hover:border-[#ffffff7f]"
+          >
+            App strore
+          </button>
+        </div>
+      </div>
+    </section>
 
+    <img
+      class="flex max-w-[200px] sm:max-w-[300px] lg:max-w-[400px] mx-auto sm:mx-auto lg:mx-auto mt-[-130px] sm:mt-[-150px] lg:mt-[-179px]"
+      src="./images/Group 53.png"
+      alt="phone"
+    />
 
+    <section class="section2 container mx-auto">
+      <h2
+        class="poppins font-semibold text-[30px] sm:text-[36px] lg:text-[44px] text-center h2"
+      >
+        How the app works
+      </h2>
+      <div
+        class="mx-auto flex flex-col lg:flex-row text-center lg:text-left items-center justify-center leading-tight"
+      >
+        <img
+          class="w-[300px] sm:w-[400px] lg:w-[600px]"
+          src="images/Rectangle (1).png"
+          alt="rec"
+        />
+        <div class="title2 montserat">
+          <h3
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#FA4A0C] font-bold"
+          >
+            Create an account
+          </h3>
+          <h2
+            class="text-[32px] sm:text-[36px] lg:text-[40px] leading-tight text-[#252b42] font-bold"
+          >
+            Create/login to an existing account to get started
+          </h2>
+          <h4
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#737373] font-medium"
+          >
+            An account is created with your email and a desired password
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto container">
+      <div
+        class="flex flex-col-reverse lg:flex-row justify-center w-full text-center lg:text-left items-center leading-tight"
+      >
+        <div class="montserat px-9">
+          <h3
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#FA4A0C] font-bold"
+          >
+            Explore varieties
+          </h3>
+          <h2
+            class="text-[32px] sm:text-[36px] lg:text-[40px] text-[#252b42] font-bold"
+          >
+            Shop for your favorites meal as e dey hot.
+          </h2>
+          <h4
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#737373] font-medium"
+          >
+            Shop for your favorite meals or drinks and enjoy while doing it.
+          </h4>
+        </div>
+        <img
+          class="w-[300px] sm:w-[400px] lg:w-[600px]"
+          src="images/Rectangle (2).png"
+          alt="rec"
+        />
+      </div>
+    </section>
+
+    <section class="section4 container mx-auto py-10 sm:py-10 lg:py-0 lg:px-0">
+      <div
+        class="leading-tight flex items-center flex-col lg:flex-row text-center lg:text-left lg:justify-center lg:items-center checkout"
+      >
+        <img
+          class="w-[300px] sm:w-[400px] lg:w-[600px]"
+          src=" images/Rectangle (3).png"
+          alt="rec"
+        />
+        <div class="title4 montserat">
+          <h3
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#FA4A0C] font-bold"
+          >
+            Checkout
+          </h3>
+          <h2
+            class="text-[32px] sm:text-[36px] lg:text-[40px] leading-10 lg:leading-[57px] text-[#252b42] font-bold"
+          >
+            When you done check out and get it delivered.
+          </h2>
+          <h4
+            class="text-[16px] sm:text-[20px] lg:text-[24px] text-[#737373] font-medium"
+          >
+            When you done check out and get it delivered with ease.
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex justify-center items-center relative lg:h-[525px]">
+      <img
+        src="images/Rectangle 47.png"
+        class="object-cover top-auto right-0 left-0 bottom-0 absolute w-full h-full lg:h-[530px] z-[-10]"
+        alt="bgimg2"
+      />
+      <div
+        class="leading-tight monserat container mx-auto flex items-center !text-[#fff] justify-center text-center flex-col h-full py-7 sm:py-7 lg:py-0"
+      >
+        <h2 class="font-bold text-[32px] sm:text-[36px] lg:text-[40px]">
+          Download the app now.
+        </h2>
+        <h4 class="font-medium text-[16px] sm:text-[20px] lg:text-[24px] pr">
+          Available on your favorite store. Start your premium experience now
+        </h4>
+        <div
+          class="m-9 lg:m-[57px] flex flex-col sm:flex-row max-lg:gap-y-5 sm:gap-x-[20px] sm:items-center sm:justify-center lg:items-center lg:justify-center clicker2 montserat font-bold"
+        >
+          <button
+            class="transition-all duration-300 border border-[#f3794d] bg-[#FA4A0C] rounded-[10px] py-[10px] sm:py-[10px] lg:py-[16px] px-5 text-white cursor-pointer hover:text-[white] hover:bg-[#f67546]"
+          >
+            Playstore
+          </button>
+          <button
+            class="transition-all duration-300 border border-white bg-transparent rounded-[10px] py-[10px] sm:py-[10px] lg:py-[16px] px-4 text-white cursor-pointer hover:text-[white] hover:bg-[#ffffff7f] hover:border-[#ffffff7f]"
+          >
+            App strore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="w-full gap-[20px] flex justify-between flex-wrap items-center pt-[10px] pr-[25px] pb-[10px] pl-[25px] max-h-full"
+    >
+      <img
+        src="images/4582665240404145ae72b9255f16e36d.png"
+        class="h-[101px]"
+        alt="logo"
+      />
+      <nav
+        class="flex items-center gap-[7px] sm:gap-[15px] lg:gap-[25px] no-underline"
+      >
+        <a href="#">
+          <img
+            src="images/ant-design_twitter-outlined.png"
+            class="tw max-sm:max-w-[36px]"
+            alt="tw"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Vector.png"
+            class="fb max-sm:max-w-[36px]"
+            alt="fb"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/instagram.png"
+            class="inst max-sm:max-w-[36px]"
+            alt="inst"
+          />
+        </a>
+      </nav>
+      <p
+        class="max-sm:w-full text-center min-sm:text-center max-lg:pb-0 font-bold roboto text-[12px] text-[#5c5c5c]"
+      >
+        Copywright 2020 Bella Onojie.com
+      </p>
+    </footer>
+  </body>
 </html>
